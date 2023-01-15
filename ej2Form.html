@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 500px;
+            border: 1px solid;
+        }
+
+        #errorMessage {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Создание учетной записи</h1>
+    <div id="wrapper">
+        <form novalidate>
+            <div>
+                <input type="text" id="login" placeholder="login" required> </div>
+            <div>
+                <input type="email" id="email" placeholder="email" required> </div>
+            <div>
+                <input type="text" id="contacts" placeholder="Номер телефона"> </div>
+            <div>
+                <input type="text" id="password" placeholder="Пароль не менее 8 символов"> </div>
+            <div>
+                <input type="file" id="photo"> </div>
+            <hr>
+            <div>Готово!</div>
+            <div> <button type="button" onclick=checkAll()> Сохранить</button></div>
+            <div id="errorMessage"></div>
+        </form>
+    </div>
+    <script src="./ej2Form.js"></script>
+</body>
+
+</html>

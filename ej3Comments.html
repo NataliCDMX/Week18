@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="conteiner" id="chat">
+        <p>Hi!</p>
+        <div><label for="author">Name*<span id="authorError"></span></label></div>
+        <input type="text" name="author" id="author" value="" class=inputs />
+        <hr>
+        <p>How are you?</p>
+        <hr>
+        <p id="output" class="output"></p>
+    </div>
+    <div class="conteiner">
+        <textarea name="comment" id="comment" class=inputs cols=" 38" rows="10"></textarea>
+        <input name="button" type="button" id="button" value="Send" onclick="checkMessage();" />
+    </div>
+    <script src="./ej3Comment.js"></script>
+</body>
+
+</html>

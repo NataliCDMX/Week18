@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Кошачий опросник</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1167/1167679.png" type="image/png">
+
+    <style>
+        input:required:valid {
+            border-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Пройдите опрос ниже</h1>
+    <legend>
+        <h4>Заполните данные ниже</h4>
+    </legend>
+    <form>
+        <div><label for="name">Кличка питомца*</label>
+            <input type="text" id="name" required></div>
+        <div><label for="age">Возраст питомца*</label>
+            <input type="number" name="age" min="0.1" max="25" required></div>
+        <div><label for="name2"> Имя владельца </label>
+            <input type="text" id="name2" /></div>
+        <div><label for="email">Контакты владельца* </label>
+            <input type="email" id="email" placeholder="email" required>
+            <input type="tel" name="phone" placeholder="Телефон" required></div>
+        <legend>
+            <h4> Выберите породу питомца
+            </h4>
+        </legend>
+        <div>
+            <select>
+                <option value="1">Абиссинская</option>
+                <option value="2">Британская</option>
+                <option value="3">Бенгальская</option>
+                <option value="3">Бирманская</option>
+                <option value="3">Гималайская</option>
+                <option value="3">Донской сфинкс</option>
+                <option value="3">Мейн-кун</option>
+                <option value="3">Персидская</option>
+                <option value="3">Русская голубая</option>
+                <option value="3">Сиамская</option>
+            </select>
+        </div>
+        <legend>
+            <h4> Чем питается?
+            </h4>
+        </legend>
+        <div>
+            Сухой корм <input type="radio" name="food" />
+            <br />Влажный корм <input type="radio" name="food1" />
+            <br /> Комбинированный корм <input type="radio" name="food2" />
+        </div>
+
+        <div>Комментарии <br /><textarea rows="10"></textarea></div>
+        <div>Вы можете приложить фотографию питомца <input type="file" /></div>
+        <div>
+            <input type="checkbox">Я ознакомлен с офертой <a href="...">Пользовательского
+                соглашения</a>
+        </div>
+        <br />
+        <div>
+            <button>Сохранить </button></div>
+    </form>
+</body>
+
+</html>
